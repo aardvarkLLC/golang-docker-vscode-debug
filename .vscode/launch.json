@@ -1,0 +1,16 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+             "name": "Remote golang debug in Docker container",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "showLog": true,
+            "trace": "verbose",
+            "logOutput": "debugger",
+            "port": 2345,
+            "host": "127.0.0.1"
+        }
+    ]
+}

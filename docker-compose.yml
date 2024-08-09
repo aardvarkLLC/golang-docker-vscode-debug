@@ -1,0 +1,7 @@
+services:
+  webapp-go:
+    build: .
+    command: --listen=:2345 --headless=true --api-version=2 --accept-multiclient --log=true --log-output=debugger,debuglineerr,gdbwire,lldbout,rpc exec /go/bin/app
+    ports:
+      - "8080:8080"
+      - "2345:2345"
